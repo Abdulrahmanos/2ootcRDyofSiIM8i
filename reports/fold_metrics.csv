@@ -1,0 +1,11 @@
+model,fold,f1
+always_flip,1,0.64
+always_flip,2,0.6407766990291263
+always_flip,3,0.6694560669456067
+always_flip,4,0.6536312849162011
+always_flip,5,0.6666666666666666
+logistic_pixels,1,0.8469601677148847
+logistic_pixels,2,0.8326530612244898
+logistic_pixels,3,0.804
+logistic_pixels,4,0.868
+logistic_pixels,5,0.9411764705882353

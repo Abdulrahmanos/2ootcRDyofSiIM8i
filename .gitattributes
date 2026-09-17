@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png binary
+# Keep the exported CSV bytes intact for the recorded manifest SHA-256.
+reports/*.csv -text whitespace=cr-at-eol

@@ -1,0 +1,92 @@
+{
+  "reproduced_at_utc": "2026-09-17T08:22:56.229573+00:00",
+  "scope": "Fixed single-image logistic-regression baseline; no deployment or sequence evaluation",
+  "data": {
+    "images": 2989,
+    "training_images": 2392,
+    "testing_images": 597,
+    "unique_video_ids": 65,
+    "shared_video_ids": 65,
+    "duplicate_file_hashes": 0,
+    "shared_exact_hashes": 0,
+    "manifest_sha256": "a9726ca3b3b91ce9a323a819f917609e0940ad43e1735061b1a39e2921ced9df"
+  },
+  "protocol": {
+    "group": "filename video_id",
+    "folds": 5,
+    "seed": 42,
+    "positive_label": "flip",
+    "probability_threshold": 0.5,
+    "group_provenance_independently_verified": false
+  },
+  "model": {
+    "features": "flattened grayscale pixels / 255",
+    "image_size_width_height": [
+      36,
+      64
+    ],
+    "scaler": "StandardScaler fitted within each fold",
+    "classifier": "LogisticRegression",
+    "C": 0.01,
+    "solver": "liblinear",
+    "max_iter": 2000
+  },
+  "grouped_validation": {
+    "always_flip": {
+      "pooled_oof_f1": 0.6539110861001688,
+      "precision": 0.48578595317725753,
+      "recall": 1.0,
+      "fold_mean_f1": 0.6541061435115202,
+      "fold_std_f1": 0.013876867054793593
+    },
+    "logistic_pixels": {
+      "pooled_oof_f1": 0.8567870485678705,
+      "precision": 0.8275862068965517,
+      "recall": 0.8881239242685026,
+      "fold_mean_f1": 0.858557939905522,
+      "fold_std_f1": 0.05171342663418666
+    }
+  },
+  "supplied_test": {
+    "f1": 0.9772329246935202,
+    "precision": 0.9928825622775801,
+    "recall": 0.9620689655172414,
+    "always_flip_f1": 0.6538895152198422,
+    "shared_video_ids": 65,
+    "shared_exact_hashes": 0,
+    "interpretation": "Supplied frame benchmark; video IDs overlap training."
+  },
+  "validation_confusion_matrix": {
+    "label_order": [
+      "notflip",
+      "flip"
+    ],
+    "rows_actual_columns_predicted": [
+      [
+        1015,
+        215
+      ],
+      [
+        130,
+        1032
+      ]
+    ]
+  },
+  "comparisons": {
+    "grouped_f1_gain_over_always_flip": 0.20287596246770168,
+    "supplied_test_minus_grouped_f1": 0.12044587612564972,
+    "gap_interpretation": "Different protocols and fitting-set sizes; not a causal leakage estimate"
+  },
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "Pillow": "12.3.0",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.1",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "notebook_code_sha256": "98780aa7466c9c3186d99b63a12f4e02c83c3d446e9898a384e4ce7d77313f51"
+}
