@@ -119,4 +119,4 @@ The work establishes a baseline that exceeds a fixed reference under an explicit
 
 For a technical reviewer, the notebook demonstrates data validation, grouped cross-validation, preprocessing within each training fold, baseline comparison, error analysis, and reproducible reporting. The conclusions are limited to the experiment that was run.
 
-Project context and dataset: [Apziva](https://www.apziva.com/). Method references are included in the notebook. The repository uses the identifier required by the brief: [Abdulrahmanos/2ootcRDyofSiIM8i](https://github.com/Abdulrahmanos/2ootcRDyofSiIM8i). It is private and requires access to view. Apziva submission is a separate step.
+Project context and dataset: [Apziva](https://www.apziva.com/). Method references are included in the notebook. The repository uses the identifier required by the brief: [Abdulrahmanos/2ootcRDyofSiIM8i](https://github.com/Abdulrahmanos/2ootcRDyofSiIM8i). Apziva submission is a separate step.

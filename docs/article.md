@@ -112,4 +112,4 @@ Project context: [Apziva](https://www.apziva.com/). Code and evidence: [notebook
 
 GitHub repository: [Abdulrahmanos/2ootcRDyofSiIM8i](https://github.com/Abdulrahmanos/2ootcRDyofSiIM8i).
 
-*Article draft. The repository is currently private; its links require access.*
+*Article draft.*
