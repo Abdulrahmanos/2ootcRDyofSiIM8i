@@ -4,9 +4,7 @@ A reproducible baseline for classifying a document image as **flipping** or **no
 
 The main result is **0.8568 F1 on frames from held-out video IDs**, compared with **0.6539** for an always-flip reference. The supplied test split yields **0.9772 F1**, but all 65 filename video IDs also appear in training. This project reports both scores with their evaluation conditions.
 
-[Notebook](01_monreader_baseline.ipynb) | [Code explanation](docs/code_walkthrough.md) | [Results and evidence](reports/results.md) | [Technical walkthrough](docs/article.md)
-
-New to the code? Start with the [code walkthrough](docs/code_walkthrough.md). It explains the main variables, array shapes, model, validation loop, inference, and reporting helper. The model is a small logistic-regression baseline; much of the notebook supports data checks and evaluation.
+[Notebook](01_monreader_baseline.ipynb) | [Results and evidence](reports/results.md) | [Project write-up](docs/article.md)
 
 ## Problem and scope
 
@@ -96,7 +94,6 @@ The inference cell defines `predict_image(path)` and saves `outputs/baseline_mod
 | Artifact | Purpose |
 | --- | --- |
 | [Notebook](01_monreader_baseline.ipynb) | Executable experiment, rationale, saved results, and image inspection |
-| [Code explanation](docs/code_walkthrough.md) | Beginner-oriented guide to every notebook section and the execution helper |
 | [reports/](reports/README.md) | Recalculable metrics, predictions, fold assignments, metadata, and aggregate plots |
 | [Runner](scripts/run_notebook.py) | Executes notebook cells in a local kernel and saves their outputs |
 | [Requirements](requirements.txt) | Package versions used for the recorded run |
